@@ -1,51 +1,222 @@
-body{
-	margin: 0;
+/*general*/
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
 	font-family: 'Lora', serif;
 	font-size: 16px;
 	line-height: 30px;
 }
 
-header{
-	background-color: #BA8098;
-	text-align: center;
-	padding-top: 80px;
-	padding-bottom: 80px;
+/*navigation styles*/
+
+.navigation{
+	background-color: #ffffff;
+	overflow: auto;
+	padding: 10px 10px 10px 10px;
+}
+
+.nav-logo{
+	width: 180px;
+}
+
+.nav-logo img{
+	width: 100%;
+	float: left;
+	margin-top: 20px;
+}
+
+.nav-items {
+	display: inline-block;
+	float: right;
+}
+
+.nav-items ul {
+padding: 0px;
+}
+
+.nav-items ul li {
+	display: inline-block;
+	margin: 0px 5px 0px 5px;
+}
+
+.nav-items ul li a {
+	color: #BA8098;
+	text-decoration: none;
+	font-family: 'Lora', serif;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.nav-items ul li a:hover {
+	color: #BDC3C7;
+}
+
+/*body styles*/
+
+body{
+	margin: 0;
 }
 
 h1, h2{
 	font-family: 'Shadows Into Light', cursive;
 }
 
-header h1{
-	color: white;
-	font-size: 50px;
-}
-
-header img{
-	border-radius: 170px;
-	width: 300px;
-	border: 10px solid #AA6A92;
-}
-
-main{
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
-}
-
-main img{
-	max-width: 100%;
-}
-
 h2{
 	font-size: 35px;
 	color: #AA6A92;
-	margin: 40px 0px 10px;
+	margin: 0px 0px 0px;
 }
 
-p{
-	
+/*header styles*/
+.header{
+	background-color: #BA8098;
+	background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/set-of-monica-gellers-apartment-in-friends-news-photo-138422675-1566406727.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	text-align: center;
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
+
+.header .container{
+	background: rgba(1, 1, 1, .8);
+	color: #ffffff;
+	border-radius: 70px;
+	display: block;
+	margin: auto;
+	max-height: 800px;
+	max-width: 500px;
+	padding: 50px;
+	text-align: center;
+}
+
+.rachel-avatar{
+	border-radius: 170px;
+	width: 300px;
+	border: 5px solid #BDC3C7;
+}
+
+.header-text{
+	color: white;
+	font-size: 40px;
+	padding: 0;
+}
+
+/*about sytles*/
+.about{
+	padding: 80px 0px;
+	text-align: center;
+}
+
+.about .about-rachel-cont{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.friends-group-img{
+	max-width: 650px;
+	width: 100%;
+}
+
+p.caption{
+	color: #999999;
+	font-style: italic;
+	margin-top: 0;
+}
+
+/*friends description styles*/
+.friends{
+	padding: 10px 0;
+	text-align: center;
+}
+
+.friends .friends-text{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.friends-text-image{
+	max-width: 350px;
+	width: 100%;
+}
+
+/*rachels likes styles*/
+.likes{
+	padding: 80px 0;
+	background-color: #F9E4F5;
+}
+
+.likes-img-cont{
+	display: inline-block;
+	text-align: right;
+	width: 29%;
+}
+
+.likes-image{
+	border-radius: 50%;
+	max-width: 350px;
+	width: 100%;
+}
+
+.likes-text{
+	display: inline-block;
+	padding-top: 40px;
+	padding-left: 10px;
+	float: right;
+	width: 70%
+}
+
+.likes-text p{
+	max-width: 700px;
+	font-family: 'Lora', serif;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+/*rachels dislikes styles*/
+.dislikes{
+	padding: 80px 0;
+	background-color: #F9E4F5;
+}
+
+.dislikes-img-cont{
+	display: inline-block;
+	text-align: right;
+	width: 49%;
+}
+
+.dislikes-image{
+	border-radius: 50%;
+	max-width: 350px;
+	width: 100%;
+}
+
+.dislikes-text{
+	display: inline-block;
+	padding-top: 40px;
+	padding-left: 10px;
+	float: right;
+	width: 50%
+}
+
+.dislikes-text p{
+	max-width: 700px;
+	font-family: 'Lora', serif;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+/*rachels name styles*/
+.rachels-name{
+	padding: 40px 0 40px 100px;
+	margin: 0 auto;
+	max-width: 800px;
+	text-align: left;
+}
+
+/*footer styles*/
 
 footer{
 	background-color: #BDC3C7;
@@ -54,15 +225,24 @@ footer{
 	padding-bottom: 20px;
 	font-size: 18px;
 	color: #AA6A92;
-
 }
 
 footer p{
 	margin: 0;
 }
 
-p.caption{
-	color: #999999;
-	font-style: italic;
-	margin-top: 0;
+a:link {
+  color: #AA6A92;
+}
+
+a:visited {
+  color: #AA6A92;
+}
+
+a:hover {
+  color: #BDC3C7;
+}
+
+a:active {
+  color: #BDC3C7;
 }
